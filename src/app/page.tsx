@@ -13,6 +13,7 @@ import Markdown from "react-markdown";
 import { useEffect, useRef } from "react";
 import { annotate } from "rough-notation";
 import Particles from "@/components/magicui/particles";
+import { ResumeCard } from "@/components/resume-card";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -113,7 +114,7 @@ export default function Page() {
                   delay={BLUR_FADE_DELAY}
                   className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
                   yOffset={8}
-                  text={`hi, i'm ${DATA.name.split(" ")[0].toLowerCase()} 👋`}
+                  text={`Hi, i'm ${DATA.name.split(" ")[0].toLowerCase()} 👋`}
                 />
                 <BlurFadeText
                   className="max-w-[600px] md:text-xl"
@@ -149,30 +150,169 @@ export default function Page() {
             </Markdown>
           </BlurFade>
         </section>
-        <section id="skills">
+        <section id="work">
           <div className="flex min-h-0 flex-col gap-y-3">
+            <BlurFade delay={BLUR_FADE_DELAY * 5}>
+              <h2 className="text-xl font-bold">Work Experience</h2>
+            </BlurFade>
+            {DATA.work.map((work, id) => (
+              <BlurFade
+                key={work.company}
+                delay={BLUR_FADE_DELAY * 6 + id * 0.05}
+              >
+                <ResumeCard
+                  key={work.company}
+                  logoUrl={work.logoUrl}
+                  altText={work.company}
+                  title={work.company}
+                  subtitle={work.title}
+                  href={work.href}
+                  badges={work.badges}
+                  period={`${work.start} - ${work.end ?? "Present"}`}
+                  description={work.description}
+                />
+              </BlurFade>
+            ))}
+          </div>
+        </section>
+        <section id="education">
+          <div className="flex min-h-0 flex-col gap-y-3">
+            <BlurFade delay={BLUR_FADE_DELAY * 7}>
+              <h2 className="text-xl font-bold">Education</h2>
+            </BlurFade>
+            {DATA.education.map((education, id) => (
+              <BlurFade
+                key={education.school}
+                delay={BLUR_FADE_DELAY * 8 + id * 0.05}
+              >
+                <ResumeCard
+                  key={education.school}
+                  href={education.href}
+                  logoUrl={education.logoUrl}
+                  altText={education.school}
+                  title={education.school}
+                  subtitle={education.degree}
+                  period={`${education.start} - ${education.end}`}
+                />
+              </BlurFade>
+            ))}
+          </div>
+        </section>
+        <section id="skills">
+          <div className="flex min-h-0 flex-col gap-y-6">
             <BlurFade delay={BLUR_FADE_DELAY * 5}>
               <h2 className="text-2xl font-bold inline-block underline-animation">
                 Skills
               </h2>
             </BlurFade>
-            <div className="flex flex-wrap gap-1">
-              {DATA.skills.map((skill, id) => (
-                <BlurFade key={skill} delay={BLUR_FADE_DELAY * 6 + id * 0.05}>
-                  <Badge variant="new" key={skill}>
-                    {skill}
-                  </Badge>
-                </BlurFade>
-              ))}
+
+            {/* Languages */}
+            <div className="">
+              <BlurFade delay={BLUR_FADE_DELAY * 6}>
+                <h3 className="text-sm font-bold">Languages:</h3>
+              </BlurFade>
+              <div className="flex flex-wrap gap-1">
+                {DATA.skillCategories.languages.map((skill, id) => (
+                  <BlurFade
+                    key={skill}
+                    delay={BLUR_FADE_DELAY * 6.5 + id * 0.05}
+                  >
+                    <Badge variant="new" key={skill}>
+                      {skill}
+                    </Badge>
+                  </BlurFade>
+                ))}
+              </div>
+            </div>
+
+            {/* Frameworks */}
+            <div className="">
+              <BlurFade delay={BLUR_FADE_DELAY * 7}>
+                <h3 className="text-sm font-bold">Frameworks:</h3>
+              </BlurFade>
+              <div className="flex flex-wrap gap-1">
+                {DATA.skillCategories.frameworks.map((skill, id) => (
+                  <BlurFade
+                    key={skill}
+                    delay={BLUR_FADE_DELAY * 7.5 + id * 0.05}
+                  >
+                    <Badge variant="new" key={skill}>
+                      {skill}
+                    </Badge>
+                  </BlurFade>
+                ))}
+              </div>
+            </div>
+
+            {/* DevOps */}
+            <div className="">
+              <BlurFade delay={BLUR_FADE_DELAY * 8}>
+                <h3 className="text-sm font-bold">DevOps:</h3>
+              </BlurFade>
+              <div className="flex flex-wrap gap-1">
+                {DATA.skillCategories.devops.map((skill, id) => (
+                  <BlurFade
+                    key={skill}
+                    delay={BLUR_FADE_DELAY * 8.5 + id * 0.05}
+                  >
+                    <Badge variant="new" key={skill}>
+                      {skill}
+                    </Badge>
+                  </BlurFade>
+                ))}
+              </div>
+            </div>
+
+            {/* Cloud */}
+            <div className="">
+              <BlurFade delay={BLUR_FADE_DELAY * 9}>
+                <h3 className="text-sm font-bold">Cloud:</h3>
+              </BlurFade>
+              <div className="flex flex-wrap gap-1">
+                {DATA.skillCategories.cloud.map((skill, id) => (
+                  <BlurFade
+                    key={skill}
+                    delay={BLUR_FADE_DELAY * 9.5 + id * 0.05}
+                  >
+                    <Badge variant="new" key={skill}>
+                      {skill}
+                    </Badge>
+                  </BlurFade>
+                ))}
+              </div>
+            </div>
+
+            {/* Databases */}
+            <div className="">
+              <BlurFade delay={BLUR_FADE_DELAY * 10}>
+                <h3 className="text-sm font-bold">Databases:</h3>
+              </BlurFade>
+              <div className="flex flex-wrap gap-1">
+                {DATA.skillCategories.databases.map((skill, id) => (
+                  <BlurFade
+                    key={skill}
+                    delay={BLUR_FADE_DELAY * 10.5 + id * 0.05}
+                  >
+                    <Badge variant="new" key={skill}>
+                      {skill}
+                    </Badge>
+                  </BlurFade>
+                ))}
+              </div>
             </div>
           </div>
-          <div className="flex min-h-0 flex-col gap-y-3 mt-4">
-            <BlurFade delay={BLUR_FADE_DELAY * 7}>
+
+          {/* Currently exploring section remains the same */}
+          <div className="flex min-h-0 flex-col mt-8">
+            <BlurFade delay={BLUR_FADE_DELAY * 11}>
               <h2 className="text-sm font-bold">Currently exploring:</h2>
             </BlurFade>
             <div className="flex flex-wrap gap-1">
               {DATA.learning.map((skill, id) => (
-                <BlurFade key={skill} delay={BLUR_FADE_DELAY * 8 + id * 0.05}>
+                <BlurFade
+                  key={skill}
+                  delay={BLUR_FADE_DELAY * 11.5 + id * 0.05}
+                >
                   <Badge variant="new" key={skill}>
                     {skill}
                   </Badge>
