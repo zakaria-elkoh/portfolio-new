@@ -15,7 +15,7 @@ export const DATA = {
   avatarUrlLight: "/mehul_light.png",
   // avatarUrlDark: "/mehul_dark.png",
   avatarUrlDark: "/mehul.jpg",
-  skills: ["JavaScript", "TypeScript", "Node.js", "React"],
+  skills: [],
   work: [
     {
       company: "Dashy",
