@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 import { ChevronRightIcon } from "lucide-react";
 import Link from "next/link";
 import React from "react";
+import BlurFade from "./magicui/blur-fade";
 
 interface ResumeCardProps {
   logoUrl: string;
@@ -18,6 +19,8 @@ interface ResumeCardProps {
   badges?: readonly string[];
   period: string;
   description?: string;
+  technologies?: string[];
+  isExpandedValue?: boolean;
 }
 export const ResumeCard = ({
   logoUrl,
@@ -28,8 +31,10 @@ export const ResumeCard = ({
   badges,
   period,
   description,
+  technologies,
+  isExpandedValue = false,
 }: ResumeCardProps) => {
-  const [isExpanded, setIsExpanded] = React.useState(false);
+  const [isExpanded, setIsExpanded] = React.useState(isExpandedValue);
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     if (description) {
@@ -41,6 +46,7 @@ export const ResumeCard = ({
   return (
     <Link
       href={href || "#"}
+      target="_blank"
       className="block cursor-pointer"
       onClick={handleClick}
     >
@@ -91,7 +97,6 @@ export const ResumeCard = ({
               initial={{ opacity: 0, height: 0 }}
               animate={{
                 opacity: isExpanded ? 1 : 0,
-
                 height: isExpanded ? "auto" : 0,
               }}
               transition={{
@@ -103,6 +108,31 @@ export const ResumeCard = ({
               {description}
             </motion.div>
           )}
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{
+              opacity: isExpanded ? 1 : 0,
+              height: isExpanded ? "auto" : 0,
+            }}
+            transition={{
+              duration: 0.7,
+              ease: [0.16, 1, 0.3, 1],
+            }}
+            className="mt-3 text-xs sm:text-sm"
+          >
+            <BlurFade delay={0.04 * 6}>
+              <h3 className="text-sm font-bold mt-2">Technologies:</h3>
+            </BlurFade>
+            <div className="flex flex-wrap gap-1">
+              {technologies?.map((skill, id) => (
+                <BlurFade key={skill} delay={0.04 * 6.5 + id * 0.05}>
+                  <Badge variant="new" key={skill}>
+                    {skill}
+                  </Badge>
+                </BlurFade>
+              ))}
+            </div>
+          </motion.div>
         </div>
       </Card>
     </Link>

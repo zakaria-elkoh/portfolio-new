@@ -167,10 +167,12 @@ export default function Page() {
                   altText={work.company}
                   title={work.company}
                   subtitle={work.title}
-                  href={work.href}
+                  // href={work.href}
                   badges={work.badges}
                   period={`${work.start} - ${work.end ?? "Present"}`}
                   description={work.description}
+                  technologies={work.technologies}
+                  isExpandedValue={id === 0}
                 />
               </BlurFade>
             ))}
@@ -182,6 +184,11 @@ export default function Page() {
               <h2 className="text-xl font-bold">Education</h2>
             </BlurFade>
             {DATA.education.map((education, id) => (
+              // <Link
+              //   href={education.href}
+              //   target="_blank"
+              //   className="block cursor-pointer"
+              // >
               <BlurFade
                 key={education.school}
                 delay={BLUR_FADE_DELAY * 8 + id * 0.05}
@@ -196,10 +203,11 @@ export default function Page() {
                   period={`${education.start} - ${education.end}`}
                 />
               </BlurFade>
+              // </Link>
             ))}
           </div>
         </section>
-        <section id="skills" className="md:flex">
+        <section id="skills" className="md:flex gap-4">
           <div className="flex-1">
             <div className="flex min-h-0 flex-col gap-y-6">
               <BlurFade delay={BLUR_FADE_DELAY * 5}>
@@ -429,12 +437,12 @@ export default function Page() {
                   </Link>{" "}
                   or{" "}
                   <Link
-                    href={DATA.contact.social.X.url}
+                    href={DATA.contact.social.LinkedIn.url}
                     target="_blank"
                     className="text-blue-500 underline-a"
                     // ref={twitterLinkRef}
                   >
-                    dm me on twitter.
+                    dm me on linkedin.
                   </Link>
                 </p>
               </div>
