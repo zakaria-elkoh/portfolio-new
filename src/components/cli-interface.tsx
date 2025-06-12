@@ -22,7 +22,6 @@ const ASCII_ART = `
 ╚══════╝╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝     ╚═════╝╚══════╝╚═╝
 `;
 
-
 interface CliInterfaceProps {
   onGuiCommand: () => void;
   onMinimize?: () => void;
@@ -135,9 +134,7 @@ function formatCommandLine(line: string, currentTheme: string | undefined) {
   return makeLinksClickable(line);
 }
 
-export function CliInterface({
-  onGuiCommand,
-}: CliInterfaceProps) {
+export function CliInterface({ onGuiCommand }: CliInterfaceProps) {
   const [input, setInput] = useState("");
   const [isMobile, setIsMobile] = useState(false);
   const [output, setOutput] = useState<string[]>([]);
@@ -186,7 +183,7 @@ export function CliInterface({
 
   const handleCommand = (cmd: string) => {
     const trimmedCmd = cmd.trim().toLowerCase();
-    const [command, ...args] = trimmedCmd.split(" ");
+    const [command] = trimmedCmd.split(" ");
     const resolvedCmd = ALIASES[command as keyof typeof ALIASES] || command;
 
     if (resolvedCmd === "clear") {
