@@ -137,9 +137,6 @@ function formatCommandLine(line: string, currentTheme: string | undefined) {
 
 export function CliInterface({
   onGuiCommand,
-  onMinimize,
-  onMaximize,
-  onClose,
 }: CliInterfaceProps) {
   const [input, setInput] = useState("");
   const [isMobile, setIsMobile] = useState(false);
