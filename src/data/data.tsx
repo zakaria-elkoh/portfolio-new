@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { FolderOpen, HomeIcon, Notebook } from "lucide-react";
+import { FolderOpen, HomeIcon, Notebook, SquareTerminal } from "lucide-react";
 
 export const DATA = {
   name: "Elkoh Zakaria",
@@ -168,6 +168,7 @@ export const DATA = {
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/projects", icon: FolderOpen, label: "Projects" },
     { href: "/blog", icon: Notebook, label: "Blog" },
+    { href: "/cli", icon: SquareTerminal, label: "Cli" },
   ],
   contact: {
     email: "contact@elkoh.me",
