@@ -14,7 +14,7 @@ export const DATA = {
     "Passionate Full-Stack Developer with 3+ years of experience building scalable web applications and cloud infrastructure. I specialize in React.js/Node.js development while architecting robust DevOps pipelines and cloud solutions on AWS & Azure. From crafting engaging user interfaces to deploying microservices architectures with Docker & Kubernetes, I deliver end-to-end solutions that drive business growth. My recent work includes deploying 5-service microservices platforms with CI/CD automation, achieving 99.9% uptime through strategic cloud optimization. Ready to transform your ideas into production-ready applications with modern tech stack and cloud-native architecture.",
   avatarUrlLight: "/mehul_light.png",
   // avatarUrlDark: "/mehul_dark.png",
-  avatarUrlDark: "/mehul.jpg",
+  avatarUrlDark: "/elkoh.png",
   skills: [],
   work: [
     {
@@ -131,7 +131,7 @@ export const DATA = {
     devops: [
       "Docker",
       "CI/CD",
-      "Kubernetes",
+      "Terraform",
       "Git",
       "GitHub",
       "GitLab",
@@ -163,7 +163,7 @@ export const DATA = {
     databases: ["MongoDB", "MySQL", "DynamoDB"],
     tools: ["Trello", "Jira", "Firewalls", "App Gateway"],
   },
-  learning: ["Terraform"],
+  learning: ["Kubernetes"],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/projects", icon: FolderOpen, label: "Projects" },
@@ -174,24 +174,24 @@ export const DATA = {
     email: "contact@elkoh.me",
     tel: "+212 705074846",
     social: {
-      GitHub: {
-        name: "GitHub",
-        url: "https://github.com/zakaria-elkoh",
-        icon: Icons.github,
-        navbar: true,
-      },
+      // GitHub: {
+      //   name: "GitHub",
+      //   url: "https://github.com/zakaria-elkoh",
+      //   icon: Icons.github,
+      //   navbar: true,
+      // },
       LinkedIn: {
         name: "LinkedIn",
         url: "https://linkedin.com/in/zakaria-elkoh",
         icon: Icons.linkedin,
         navbar: true,
       },
-      X: {
-        name: "X",
-        url: "https://x.com/elkoh00",
-        icon: Icons.x,
-        navbar: true,
-      },
+      // X: {
+      //   name: "X",
+      //   url: "https://x.com/elkoh00",
+      //   icon: Icons.x,
+      //   navbar: true,
+      // },
       Email: {
         name: "Send Email",
         url: "mailto:contact@elkoh.me",
@@ -270,69 +270,69 @@ export const DATA = {
       image: "/z.png",
       // video: "",
     },
-    {
-      title: "notez",
-      href: "https://notezai.vercel.app",
-      dates: "Aug. 2024 - Sept. 2024",
-      active: true,
-      description:
-        "An AI math solver that allows users to draw mathematical expressions on a blank canvas. It intelligently recognizes these drawings, solves the expressions, and converts them to LaTeX.",
-      technologies: [
-        "Vite",
-        "React",
-        "Typescript",
-        "Gemini GenAI API",
-        "FastAPI",
-        "Tailwind CSS",
-        "Node.js",
-        "Render",
-        "Vercel",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://notezai.vercel.app",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Repository",
-          href: "https://github.com/m3hu1/notez",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/n.png",
-      // video: "",
-    },
-    {
-      title: "bugpa",
-      href: "https://bugpa.vercel.app",
-      dates: "Dec. 2023 - Jan. 2024",
-      active: true,
-      description:
-        "A GPA calculator designed for college students, addressing the common issue of understanding the credit system. It provides a simple UI for quick SGPA calculation.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "Node.js",
-        "Tailwind CSS",
-        "Vercel",
-        "shadcn/ui",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://bugpa.vercel.app",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Repository",
-          href: "https://github.com/m3hu1/gpa-calculator",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/b.png",
-      // video: "",
-    },
+    // {
+    //   title: "notez",
+    //   href: "https://notezai.vercel.app",
+    //   dates: "Aug. 2024 - Sept. 2024",
+    //   active: true,
+    //   description:
+    //     "An AI math solver that allows users to draw mathematical expressions on a blank canvas. It intelligently recognizes these drawings, solves the expressions, and converts them to LaTeX.",
+    //   technologies: [
+    //     "Vite",
+    //     "React",
+    //     "Typescript",
+    //     "Gemini GenAI API",
+    //     "FastAPI",
+    //     "Tailwind CSS",
+    //     "Node.js",
+    //     "Render",
+    //     "Vercel",
+    //   ],
+    //   links: [
+    //     {
+    //       type: "Website",
+    //       href: "https://notezai.vercel.app",
+    //       icon: <Icons.globe className="size-3" />,
+    //     },
+    //     {
+    //       type: "Repository",
+    //       href: "https://github.com/m3hu1/notez",
+    //       icon: <Icons.github className="size-3" />,
+    //     },
+    //   ],
+    //   image: "/n.png",
+    //   // video: "",
+    // },
+    // {
+    //   title: "bugpa",
+    //   href: "https://bugpa.vercel.app",
+    //   dates: "Dec. 2023 - Jan. 2024",
+    //   active: true,
+    //   description:
+    //     "A GPA calculator designed for college students, addressing the common issue of understanding the credit system. It provides a simple UI for quick SGPA calculation.",
+    //   technologies: [
+    //     "Next.js",
+    //     "Typescript",
+    //     "Node.js",
+    //     "Tailwind CSS",
+    //     "Vercel",
+    //     "shadcn/ui",
+    //   ],
+    //   links: [
+    //     {
+    //       type: "Website",
+    //       href: "https://bugpa.vercel.app",
+    //       icon: <Icons.globe className="size-3" />,
+    //     },
+    //     {
+    //       type: "Repository",
+    //       href: "https://github.com/m3hu1/gpa-calculator",
+    //       icon: <Icons.github className="size-3" />,
+    //     },
+    //   ],
+    //   image: "/b.png",
+    //   // video: "",
+    // },
     // {
     //   title: "qaution",
     //   href: "https://qaution.vercel.app",
