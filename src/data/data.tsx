@@ -8,8 +8,7 @@ export const DATA = {
   location: "Greater Noida, UP",
   locationLink:
     "https://www.google.com/maps/place/Bennett+University/@28.4431291,77.5873979,13.43z/data=!4m6!3m5!1s0x390cbf94deb6bc39:0x7ba6bedc9a2b537f!8m2!3d28.4506465!4d77.5841978!16s%2Fg%2F11c3wvm4q_?entry=ttu&g_ep=EgoyMDI0MTAyMC4xIKXMDSoASAFQAw%3D%3D",
-  description:
-    "React.js/Node.js Developer | AWS & Azure Cloud Specialist | DevOps Engineer",
+  description: "React.js/Node.js | DevOps | Cloud (AWS & Azure)",
   summary:
     "Passionate Full-Stack Developer with 3+ years of experience building scalable web applications and cloud infrastructure. I specialize in React.js/Node.js development while architecting robust DevOps pipelines and cloud solutions on AWS & Azure. From crafting engaging user interfaces to deploying microservices architectures with Docker & Kubernetes, I deliver end-to-end solutions that drive business growth. My recent work includes deploying 5-service microservices platforms with CI/CD automation, achieving 99.9% uptime through strategic cloud optimization. Ready to transform your ideas into production-ready applications with modern tech stack and cloud-native architecture.",
   avatarUrlLight: "/mehul_light.png",
