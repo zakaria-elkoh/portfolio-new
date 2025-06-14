@@ -147,9 +147,9 @@ export function CliInterface({ onGuiCommand }: CliInterfaceProps) {
   const { setTheme } = useTheme();
 
   // Force dark theme
-  useEffect(() => {
-    setTheme("dark");
-  }, [setTheme]);
+  // useEffect(() => {
+  //   setTheme("dark");
+  // }, [setTheme]);
 
   useEffect(() => {
     const checkMobile = () => {
