@@ -10,7 +10,7 @@ export const DATA = {
     "https://www.google.com/maps/place/Bennett+University/@28.4431291,77.5873979,13.43z/data=!4m6!3m5!1s0x390cbf94deb6bc39:0x7ba6bedc9a2b537f!8m2!3d28.4506465!4d77.5841978!16s%2Fg%2F11c3wvm4q_?entry=ttu&g_ep=EgoyMDI0MTAyMC4xIKXMDSoASAFQAw%3D%3D",
   description: "React.js/Node.js | DevOps | Cloud (AWS & Azure)",
   summary:
-    "Passionate Full-Stack Developer with 3+ years of experience building scalable web applications and cloud infrastructure. I specialize in React.js/Node.js development while architecting robust DevOps pipelines and cloud solutions on AWS & Azure. From crafting engaging user interfaces to deploying microservices architectures with Docker & Kubernetes, I deliver end-to-end solutions that drive business growth. My recent work includes deploying 5-service microservices platforms with CI/CD automation, achieving 99.9% uptime through strategic cloud optimization. Ready to transform your ideas into production-ready applications with modern tech stack and cloud-native architecture.",
+    "Passionate Full-Stack Developer with almost 3 years of experience building scalable web applications and cloud infrastructure. I specialize in React.js/Node.js development while architecting robust DevOps pipelines and cloud solutions on AWS & Azure. From crafting engaging user interfaces to deploying microservices architectures with Docker & Kubernetes, I deliver end-to-end solutions that drive business growth. My recent work includes deploying 5-service microservices platforms with CI/CD automation, achieving 99.9% uptime through strategic cloud optimization. Ready to transform your ideas into production-ready applications with modern tech stack and cloud-native architecture.",
   avatarUrlLight: "/mehul_light.png",
   // avatarUrlDark: "/mehul_dark.png",
   avatarUrlDark: "/elkoh.png",
@@ -201,355 +201,252 @@ export const DATA = {
   },
   projects: [
     {
-      title: "algorithmik",
-      href: "https://www.algorithmik.in/",
-      dates: "Oct. 2024 - Jan. 2025",
+      title: "foly.cc",
+      href: "https://www.foly.cc/",
+      // dates: "Feb 2025", // Add actual creation dates
       active: true,
       description:
-        "A comprehensive guide to mastering data structures and algorithms. Explore notes on important DSA topics and tackle a variety of problem sets.",
+        "A platform where people can create and manage their professional portfolios online. Users can sign up, fill in their information through an intuitive dashboard, select from various responsive templates, and get a custom URL to showcase their work and skills to potential employers or clients.",
       technologies: [
-        "React",
-        "TypeScript",
         "Next.js",
-        "MarkdownX",
+        "NestJS",
         "Node.js",
-        "Magic UI",
+        "MongoDB",
         "Tailwind CSS",
-        "shadcn/ui",
-        "Vercel",
+        "AWS S3",
+        "Railway",
+        "Mailtrap",
+        "Oauth",
+        "JWT",
+        "Rest API",
+        "letsencrypt",
       ],
       links: [
         {
           type: "Website",
-          href: "https://www.algorithmik.in/",
+          href: "https://www.foly.cc/",
           icon: <Icons.globe className="size-3" />,
         },
-        {
-          type: "Repository",
-          href: "https://github.com/m3hu1/algorithmik",
-          icon: <Icons.github className="size-3" />,
-        },
       ],
-      image: "/a.png",
-      // video: "",
+      image: "", // Add image path if available
     },
     {
-      title: "z1ppie",
-      href: "https://z1ppie.vercel.app",
-      dates: "Sept. 2024 - Oct. 2024",
+      title: "My portfolio",
+      href: "https://www.elkoh.me/",
+      // dates: "Feb 2025", // Add actual creation dates
       active: true,
       description:
-        "A peer-to-peer (P2P) file sharing application that utilizes WebRTC for seamless communication and features real-time chat functionality through Socket.IO.",
+        "A personal portfolio website where I can showcase my projects, share my professional experience, and publish blog posts about tech topics. The platform serves as a comprehensive digital presence where visitors can learn about my skills, view my work history, explore my side projects, and read my technical writings.",
       technologies: [
         "Next.js",
-
-        "WebRTC",
-        "Socket.IO",
         "TypeScript",
-        "Node.js",
         "Tailwind CSS",
-        "Render",
-        "shadcn/ui",
-        "Indie UI",
-        "Vercel",
-        // "Aceternity UI",
+        "Shadcn UI",
+        "Magic UI",
       ],
       links: [
         {
           type: "Website",
-          href: "https://z1ppie.vercel.app",
+          href: "https://www.elkoh.me/",
           icon: <Icons.globe className="size-3" />,
         },
-        {
-          type: "Repository",
-          href: "https://github.com/m3hu1/z1ppie",
-          icon: <Icons.github className="size-3" />,
-        },
       ],
-      image: "/z.png",
-      // video: "",
+      image: "", // Add image path if available
     },
-    // {
-    //   title: "notez",
-    //   href: "https://notezai.vercel.app",
-    //   dates: "Aug. 2024 - Sept. 2024",
-    //   active: true,
-    //   description:
-    //     "An AI math solver that allows users to draw mathematical expressions on a blank canvas. It intelligently recognizes these drawings, solves the expressions, and converts them to LaTeX.",
-    //   technologies: [
-    //     "Vite",
-    //     "React",
-    //     "Typescript",
-    //     "Gemini GenAI API",
-    //     "FastAPI",
-    //     "Tailwind CSS",
-    //     "Node.js",
-    //     "Render",
-    //     "Vercel",
-    //   ],
-    //   links: [
-    //     {
-    //       type: "Website",
-    //       href: "https://notezai.vercel.app",
-    //       icon: <Icons.globe className="size-3" />,
-    //     },
-    //     {
-    //       type: "Repository",
-    //       href: "https://github.com/m3hu1/notez",
-    //       icon: <Icons.github className="size-3" />,
-    //     },
-    //   ],
-    //   image: "/n.png",
-    //   // video: "",
-    // },
-    // {
-    //   title: "bugpa",
-    //   href: "https://bugpa.vercel.app",
-    //   dates: "Dec. 2023 - Jan. 2024",
-    //   active: true,
-    //   description:
-    //     "A GPA calculator designed for college students, addressing the common issue of understanding the credit system. It provides a simple UI for quick SGPA calculation.",
-    //   technologies: [
-    //     "Next.js",
-    //     "Typescript",
-    //     "Node.js",
-    //     "Tailwind CSS",
-    //     "Vercel",
-    //     "shadcn/ui",
-    //   ],
-    //   links: [
-    //     {
-    //       type: "Website",
-    //       href: "https://bugpa.vercel.app",
-    //       icon: <Icons.globe className="size-3" />,
-    //     },
-    //     {
-    //       type: "Repository",
-    //       href: "https://github.com/m3hu1/gpa-calculator",
-    //       icon: <Icons.github className="size-3" />,
-    //     },
-    //   ],
-    //   image: "/b.png",
-    //   // video: "",
-    // },
-    // {
-    //   title: "qaution",
-    //   href: "https://qaution.vercel.app",
-    //   dates: "Mar 2023 - May 2023",
-    //   active: true,
-    //   description:
-    //     "A platform that offers a comprehensive suite of cybersecurity services, including redirect tracking, SSL certificate verification, IP reputation checking, and more.",
-    //   technologies: [
-    //     "Python",
-    //     "FastAPI",
-    //     "Next.js",
-    //     "Typescript",
-    //     "Tailwind CSS",
-    //     // "Lottie",
-    //     "Node.js",
-    //     "Vercel",
-    //   ],
-    //   links: [
-    //     {
-    //       type: "Website",
-    //       href: "https://qaution.vercel.app",
-    //       icon: <Icons.globe className="size-3" />,
-    //     },
-    //     {
-    //       type: "Repository",
-    //       href: "https://github.com/m3hu1/qaution",
-    //       icon: <Icons.github className="size-3" />,
-    //     },
-    //   ],
-    //   image: "/q.png",
-    //   // video: "",
-    // },
   ],
   more_projects: [
     {
-      title: "codeforces-problem-search",
-      href: "https://github.com/m3hu1/codeforces-problem-search",
-      dates: "Jan 2025",
+      title: "Eyebook",
+      href: "Nov 2022", // Add actual URL if available
+      dates: "Month Year - Month Year", // Replace with actual creation dates
       active: true,
       description:
-        "This is a Raycast extension that fetches all details of a problem from codeforces using the problem id or problem name.",
-      technologies: ["Raycast", "Extension", "TypeScript", "Node.js", "React"],
-      links: [
-        {
-          type: "Repository",
-          href: "https://github.com/m3hu1/codeforces-problem-search",
-          icon: <Icons.github className="size-3" />,
-        },
+        "A Social Media website where you can add posts and see others posts, and add comments to others posts. It is responsive and easy to use.",
+      technologies: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Bootstrap",
+        "API",
+        "Axios",
+        "JSON",
+        "FontAwesome",
       ],
-      image: "",
-      // video: "",
-    },
-    {
-      title: "cf-testcases-checker-rust",
-      href: "https://github.com/m3hu1/cf-testcases-checker-rust",
-      dates: "Jan 2025",
-      active: true,
-      description:
-        "Simple command-line tool written in Rust to fetch and run test cases for Codeforces problems against your Golang solutions.",
-      technologies: ["Rust", "CLI"],
       links: [
         {
-          type: "Repository",
-          href: "https://github.com/m3hu1/cf-testcases-checker-rust",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      // video: "",
-    },
-    {
-      title: "learning-go",
-      href: "https://github.com/m3hu1/learning-go",
-      dates: "Nov 2024",
-      active: true,
-      description:
-        "Collection of programs and projects that I built using Go while learning the Go programming language.",
-      technologies: ["Go", "Misc"],
-      links: [
-        {
-          type: "Repository",
-          href: "https://github.com/m3hu1/learning-go",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      // video: "",
-    },
-    {
-      title: "go-todo",
-      href: "https://github.com/m3hu1/golang-todo-cli",
-      dates: "Sept 2024",
-      active: true,
-      description:
-        "A Go-based CLI for todo task management using Cobra. Supports adding, listing, completing, and deleting tasks with CSV persistence.",
-      technologies: ["Go", "Cobra", "CRUD", "CLI"],
-      links: [
-        {
-          type: "Repository",
-          href: "https://github.com/m3hu1/golang-todo-cli",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      // video: "",
-    },
-    {
-      title: "go-typing-test",
-      href: "https://github.com/m3hu1/typing-test-golang",
-      dates: "Oct 2024",
-      active: true,
-      description:
-        "A typing test application that leverages Go for the backend. This project showcases my learning journey in Golang.",
-      technologies: ["Go", "HTML", "CSS", "HTTP", "Server"],
-      links: [
-        {
-          type: "Repository",
-          href: "https://github.com/m3hu1/typing-test-golang",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      // video: "",
-    },
-    {
-      title: "ceh-notes",
-      href: "https://cehnotes.netlify.app",
-      dates: "Oct 2024",
-      active: true,
-      description:
-        "Revived study notes for the EC-Council Certified Ethical Hacker (C|EH) v12 exam originally by @findmeandkillme hosted using HonKit.",
-      technologies: ["HonKit", "GitBook", "Markdown", "Notes", "Netlify"],
-      links: [
-        {
-          type: "Website",
-          href: "https://cehnotes.netlify.app",
+          type: "Live Demo",
+          href: "https://eyeboook.netlify.app/", // Add actual demo URL
           icon: <Icons.globe className="size-3" />,
         },
-        {
-          type: "Repository",
-          href: "https://github.com/m3hu1/ceh-notes",
-          icon: <Icons.github className="size-3" />,
-        },
+        // {
+        //   type: "Source Code",
+        //   href: "#", // Add actual repository URL
+        //   icon: <Icons.github className="size-3" />,
+        // },
       ],
-      image: "",
-      // video: "",
+      image: "", // Add image path if available
     },
     {
-      title: "auto-typer",
-      href: "https://github.com/m3hu1/auto-typer",
-      dates: "Feb 2024 - Apr 2024",
+      title: "Gym Coach",
+      href: "#", // Add actual URL if available
+      dates: "Nov 2022", // Add dates if available
       active: true,
       description:
-        "Python and C++ scripts to automate keyboard typing based on the content of a text file.",
-      technologies: ["Python", "C++", "CLI"],
+        "A responsive landing page built with modern technologies for fitness coaching services.",
+      technologies: ["HTML", "CSS", "JavaScript", "Bootstrap", "FontAwesome"],
       links: [
         {
-          type: "Repository",
-          href: "https://github.com/m3hu1/auto-typer",
-          icon: <Icons.github className="size-3" />,
+          type: "Live Demo",
+          href: "https://mazine-elhamdouchi.netlify.app/", // Add actual demo URL
+          icon: <Icons.globe className="size-3" />,
         },
+        // {
+        //   type: "Source Code",
+        //   href: "#", // Add actual repository URL
+        //   icon: <Icons.github className="size-3" />,
+        // },
       ],
-      image: "",
-      // video: "",
+      image: "", // Add image path if available
     },
     {
-      title: "perfect-circle-exploit",
-      href: "https://github.com/m3hu1/perfect-circle",
-      dates: "Dec 2023",
+      title: "Bondi",
+      href: "#", // Add actual URL if available
+      dates: "Oct 2022", // Add dates if available
       active: true,
       description:
-        "MacOS only. Exploit to draw a perfect circle (99.9%) on Neal.fun's Perfect Circle Challenge.",
-      technologies: ["C++", "CLI", "Exploit"],
+        "A responsive blog website built using modern web technologies with clean and modern design.",
+      technologies: ["HTML", "CSS", "JavaScript", "Bootstrap", "FontAwesome"],
       links: [
         {
-          type: "Repository",
-          href: "https://github.com/m3hu1/perfect-circle",
-          icon: <Icons.github className="size-3" />,
+          type: "Live Demo",
+          href: "https://boondii.netlify.app/", // Add actual demo URL
+          icon: <Icons.globe className="size-3" />,
         },
+        // {
+        //   type: "Source Code",
+        //   href: "#", // Add actual repository URL
+        //   icon: <Icons.github className="size-3" />,
+        // },
       ],
-      image: "",
-      // video: "",
+      image: "", // Add image path if available
     },
     {
-      title: "instagram-impostor",
-      href: "https://github.com/m3hu1/impostor",
-      dates: "Jun 2024",
+      title: "Bookmark",
+      href: "#", // Add actual URL if available
+      dates: "Jan 2023", // Add dates if available
       active: true,
       description:
-        "A python3 script to identify Instagram accounts that don't follow you back.",
-      technologies: ["Python", "CLI", "Fun"],
+        "A responsive landing page built using modern technologies with clean design and smooth user experience.",
+      technologies: ["HTML", "CSS", "JavaScript", "Bootstrap", "FontAwesome"],
       links: [
         {
-          type: "Repository",
-          href: "https://github.com/m3hu1/impostor",
-          icon: <Icons.github className="size-3" />,
+          type: "Live Demo",
+          href: "https://boookmark.netlify.app/", // Add actual demo URL
+          icon: <Icons.globe className="size-3" />,
         },
+        // {
+        //   type: "Source Code",
+        //   href: "#", // Add actual repository URL
+        //   icon: <Icons.github className="size-3" />,
+        // },
       ],
-      image: "",
-      // video: "",
+      image: "", // Add image path if available
     },
     {
-      title: "cpp-fms",
-      href: "https://github.com/m3hu1/terminalplusplus",
-      dates: "Nov 2023 - Dec 2023",
+      title: "Evento",
+      href: "#", // Add actual URL if available
+      dates: "", // Add dates if available
       active: true,
       description:
-        "A C++ based command-line interface (CLI) file management system that implements essential operations from scratch.",
-      technologies: ["C++", "CLI", "Collaboration"],
+        "An Event Platform where you can find, reserve and create events with modern user interface and functionality.",
+      technologies: ["PHP", "Laravel", "JavaScript", "HTML", "Tailwind CSS"],
       links: [
+        // {
+        //   type: "Live Demo",
+        //   href: "#", // Add actual demo URL
+        //   icon: <Icons.globe className="size-3" />,
+        // },
         {
-          type: "Repository",
-          href: "https://github.com/m3hu1/terminalplusplus",
+          type: "Source Code",
+          href: "https://github.com/zakaria-elkoh/evento", // Add actual repository URL
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
-      // video: "",
+      image: "", // Add image path if available
+    },
+    {
+      title: "Dental",
+      href: "#", // Add actual URL if available
+      dates: "Jan 2023", // Add dates if available
+      active: true,
+      description:
+        "A multi-pages dentist website that is responsive and contains light and dark mode for better user experience.",
+      technologies: ["HTML", "CSS", "JavaScript", "FontAwesome"],
+      links: [
+        {
+          type: "Live Demo",
+          href: "https://denteloo.netlify.app/", // Add actual demo URL
+          icon: <Icons.globe className="size-3" />,
+        },
+        // {
+        //   type: "Source Code",
+        //   href: "#", // Add actual repository URL
+        //   icon: <Icons.github className="size-3" />,
+        // },
+      ],
+      image: "", // Add image path if available
+    },
+    {
+      title: "LawConny",
+      href: "#", // Add actual URL if available
+      dates: "Mar 2024", // Add dates if available
+      active: true,
+      description:
+        "A platform for legal enthusiasts to connect, share posts, chat, and follow each other, fostering a vibrant community of law professionals and students.",
+      technologies: [
+        "React",
+        "JavaScript",
+        "PHP",
+        "Laravel",
+        "Tailwind CSS",
+        "shadcn/ui",
+        "React Query",
+      ],
+      links: [
+        //   {
+        //     type: "Live Demo",
+        //     href: "#", // Add actual demo URL
+        //     icon: <Icons.globe className="size-3" />,
+        //   },
+        {
+          type: "Source Code",
+          href: "https://github.com/zakaria-elkoh/LawConny", // Add actual repository URL
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "", // Add image path if available
+    },
+    {
+      title: "Movie Mingle",
+      href: "#", // Add actual URL if available
+      dates: "Feb 2023", // Add dates if available
+      active: true,
+      description:
+        "A film discovery platform created in collaboration with a team of four. Focus was on the landing page to ensure an engaging entry point for movie enthusiasts.",
+      technologies: ["HTML", "CSS", "JavaScript", "Bootstrap", "FontAwesome"],
+      links: [
+        {
+          type: "Live Demo",
+          href: "https://zakaria-elkoh.github.io/Movie-Mingle/", // Add actual demo URL
+          icon: <Icons.globe className="size-3" />,
+        },
+        // {
+        //   type: "Source Code",
+        //   href: "#", // Add actual repository URL
+        //   icon: <Icons.github className="size-3" />,
+        // },
+      ],
+      image: "", // Add image path if available
     },
   ],
 };

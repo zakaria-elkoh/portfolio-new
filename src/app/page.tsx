@@ -354,7 +354,7 @@ export default function Page() {
                 <h3 className="text-2xl font-bold tracking-tighter sm:text-3xl">
                   Check out my{" "}
                   <Link
-                    href="https://drive.google.com/file/d/1LLDsv8uzp07CVql618rH1E3a7t2U9p9W/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1PZWLPxFYJrPCmQ31j9oGDXNmzp-sf5HL/view?usp=drive_link"
                     target="_blank"
                     className="text-blue-500 underline-a"
                     // ref={resumeLinkRef}
@@ -377,7 +377,7 @@ export default function Page() {
                   </div>
                   <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                     {/* Check out my latest work */}
-                    <SparklesText text="My latest work"></SparklesText>
+                    <SparklesText text="My Side Projects"></SparklesText>
                   </h2>
                   <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                     I love building projects, whether they are simple websites
@@ -405,6 +405,22 @@ export default function Page() {
                   />
                 </BlurFade>
               ))}
+            </div>
+            <div className="grid items-center justify-end gap-4 text-center w-full">
+              <BlurFade delay={BLUR_FADE_DELAY * 9}>
+                <div className="space-y-3">
+                  <h3 className="text-2xl font-bold tracking-tighter sm:text-2xl">
+                    <Link
+                      href="/projects"
+                      target="_blank"
+                      className="text-blue-500 underline-a"
+                      // ref={resumeLinkRef}
+                    >
+                      More projects.
+                    </Link>
+                  </h3>
+                </div>
+              </BlurFade>
             </div>
           </div>
         </section>

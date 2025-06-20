@@ -37,7 +37,7 @@ const Page = () => {
                 My Projects
               </div>
               <h2 className="text-2xl font-bold tracking-tighter sm:text-4xl">
-                Explore my projects
+                Explore Side projects
               </h2>
               <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 Below are the rest of the projects that I&apos;ve developed over
