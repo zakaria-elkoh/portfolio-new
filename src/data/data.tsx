@@ -203,7 +203,7 @@ export const DATA = {
     {
       title: "foly.cc",
       href: "https://www.foly.cc/",
-      // dates: "Feb 2025", // Add actual creation dates
+      dates: "Feb 2025", // Add actual creation dates
       active: true,
       description:
         "A platform where people can create and manage their professional portfolios online. Users can sign up, fill in their information through an intuitive dashboard, select from various responsive templates, and get a custom URL to showcase their work and skills to potential employers or clients.",
@@ -233,7 +233,7 @@ export const DATA = {
     {
       title: "My portfolio",
       href: "https://www.elkoh.me/",
-      // dates: "Feb 2025", // Add actual creation dates
+      dates: "Feb 2025", // Add actual creation dates
       active: true,
       description:
         "A personal portfolio website where I can showcase my projects, share my professional experience, and publish blog posts about tech topics. The platform serves as a comprehensive digital presence where visitors can learn about my skills, view my work history, explore my side projects, and read my technical writings.",
