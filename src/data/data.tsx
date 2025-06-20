@@ -21,7 +21,7 @@ export const DATA = {
       href: "https://dashypay.com/",
       badges: [],
       location: "Remote",
-      title: "Bitcoin Protocol Engineer",
+      title: "Devops & Cloud",
       logoUrl:
         "https://static-files.umso.co/lib_fuQmwDFdYtrMKkHt/fi63s5iqxhpdmua4.svg?w=250&dpr=2",
       start: "APR 2025",
@@ -48,7 +48,7 @@ export const DATA = {
       badges: [],
       href: "https://axigeo.com/",
       location: "Remote",
-      title: "Software Engineer",
+      title: "React JS / Node JS Developer",
       logoUrl:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5GdD5jCBJXArpRbv41L29YVLZsKNmW_4ReA&s",
       start: "APR-2024",
@@ -77,7 +77,7 @@ export const DATA = {
       href: "https://elkoh.me/",
       badges: [],
       location: "Santa Clara, CA",
-      title: "Software Engineer",
+      title: "Frontend developer",
       logoUrl:
         "https://d3s3shtvds09gm.cloudfront.net/uploads/2023/06/freelancer-logo.png",
       start: "SEP-2022",
@@ -108,11 +108,12 @@ export const DATA = {
       end: "2025",
     },
     {
-      school: "University of Waterloo",
-      href: "https://uwaterloo.ca",
-      degree: "Bachelor's Degree of Computer Science (BCS)",
-      logoUrl: "/waterloo.png",
-      start: "2016",
+      school: "ISTHA",
+      href: "https://www.ofppt.ma/",
+      degree: "Specialized Technician Diploma",
+      logoUrl:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/OFPPT.png/800px-OFPPT.png",
+      start: "2019",
       end: "2021",
     },
   ],
